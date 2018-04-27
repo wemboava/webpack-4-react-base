@@ -5,6 +5,7 @@ const App = () => {
     return (
         <div>
             <p>React here!</p>
+            <img className="test-img" src={require('_img/image.jpeg')} alt="" />
         </div>
     )
 }

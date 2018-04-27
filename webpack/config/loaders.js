@@ -39,18 +39,19 @@ module.exports = [
         test: /\.(png|jpe?g|gif|svg)?$/,
         loader: 'url-loader',
         options: {
-            limit: 10000,
-            name: 'imgs/[name].[ext]?[hash]'
+            limit: 10000
         }
     },
     {
         test: /.(ttf|otf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-        use: [{
-            loader: 'file-loader',
-            options: {
-                name: '[name].[ext]?[hash]',
-                outputPath: 'fonts/',    // where the fonts will go
+        use: [
+            {
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]?[hash]',
+                    outputPath: 'fonts/',    // where the fonts will go
+                }
             }
-        }]
+        ]
     }    
 ]

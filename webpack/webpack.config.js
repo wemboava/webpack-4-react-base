@@ -6,25 +6,27 @@ const loaders = require('./config/loaders')
     , MiniCssExtractPlugin = require('mini-css-extract-plugin')
     , path = require('path')
     , src = path.join(__dirname, '..', 'src')
+    , dist = path.join(__dirname, '..', 'dist')
 
 module.exports = {
+    devtool: 'source-map',
+
     module: {
         rules: [
             ...loaders
         ]
     },
 
+    devServer: {
+        contentBase: dist,
+        historyApiFallback: true,
+        open: true,
+        port: 9000
+    },
+
     resolve: {
-        extensions: ['', '.js', '.jsx', 'json'],
-        alias: {
-            '_root': path.join(src, '..'),
-            '_src': src,
-            '_assets': path.join(src, 'assets'),
-            '_img': path.join(src, 'assets', 'images'),
-            '_fonts': path.join(src, 'assets', 'fonts'),
-            '_scss': path.join(src, 'assets', 'scss'),
-            '_npm': path.join(__dirname, '..', 'node_modules')
-        }
+        extensions: ['.js', '.jsx', 'json'],
+        alias: alias
     },
 
     plugins: [
