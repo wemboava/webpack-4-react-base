@@ -1,2 +1,2 @@
-import App from "./App.jsx";
-import style from "_scss/index.scss";
+import * as app from '_src/App.jsx'
+import * as style from '_scss/index.scss'
