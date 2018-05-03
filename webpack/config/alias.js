@@ -6,9 +6,17 @@ const path = require('path')
 module.exports = {
     '_root': path.join('../..', __dirname),
     '_src': src,
+    '_npm': path.join(__dirname, '../..', 'node_modules'),
+    
     '_assets': path.join(src, 'assets'),
     '_img': path.join(src, 'assets', 'images'),
     '_fonts': path.join(src, 'assets', 'fonts'),
-    '_scss': path.join(src, 'assets', 'scss'),
-    '_npm': path.join(__dirname, '../..', 'node_modules')
+    '_sass': path.join(src, 'assets', 'scss'),
+    
+    '_app': path.join(src, 'app'),
+    '_common': path.join(src, 'app', 'common'),
+    '_components': path.join(src, 'app', 'components'),
+    '_routes': path.join(src, 'app', 'routes'),
+    '_utils': path.join(src, 'app', 'utils'),
+    '_view': path.join(src, 'app', 'view')
 }
