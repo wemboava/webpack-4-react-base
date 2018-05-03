@@ -36,8 +36,8 @@ module.exports = {
             filename: "./index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].scss",
-            chunkFilename: "[id].scss"
+            filename: "[name].[contenthash].scss",
+            chunkFilename: "[id].[contenthash].scss"
         }),
         new DashboardPlugin()
     ]
