@@ -1,0 +1,89 @@
+@import "./vars";
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: $font-size;
+	font-weight: 400;
+
+	-webkit-text-size-adjust: 100%;
+ 	-ms-text-size-adjust: 100%;
+ 	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+body {
+	font-family: $font-default;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+input:not([type="submit"]),
+textarea,
+p,
+h1, h2, h3, h4, h5,
+span {
+   user-select: auto;
+
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+
+   -webkit-touch-callout: auto;
+}
+
+input,
+input[type="range"] {
+	outline: none;
+
+	&:active, &:focus {
+		outline: none;
+	}
+}
+
+textarea {
+	resize: none !important;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+a, a:hover, a:active, a:visited {
+	cursor: pointer;
+	color: inherit;
+    text-decoration: none;
+}
+
+a, button {
+	cursor: pointer;
+
+	border: none;
+	outline: none;
+}
+
+img {
+	height: auto;
+	display: block;
+}
+
+p { font-size: 1rem; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.25rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.25rem;}
+h5 { font-size: 1rem; }
+h6 { font-size: 0.75rem; }

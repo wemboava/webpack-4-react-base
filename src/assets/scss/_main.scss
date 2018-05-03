@@ -1,0 +1,20 @@
+/*  Config
+=============================================*/
+@import '~_scss/config/vars';
+@import '~_scss/config/mixins';
+@import '~_scss/config/base';
+
+/*  Components
+=============================================*/
+
+/*  Layouts
+=============================================*/
+
+////////
+body {
+    background-color: #15a58f;
+
+    .test-img {
+        width: 100px;
+    }
+}
