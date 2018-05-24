@@ -2,6 +2,7 @@
 
 const loaders = require('./config/loaders')
     , alias = require('./config/alias')
+    , DashboardPlugin = require('webpack-dashboard/plugin')
     , HtmlWebpackPlugin = require('html-webpack-plugin')
     , MiniCssExtractPlugin = require('mini-css-extract-plugin')
     , path = require('path')
@@ -35,8 +36,9 @@ module.exports = {
             filename: "./index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: "[name].scss",
-            chunkFilename: "[id].scss"
-        })
+            filename: "[name].[contenthash].scss",
+            chunkFilename: "[id].[contenthash].scss"
+        }),
+        new DashboardPlugin()
     ]
 }

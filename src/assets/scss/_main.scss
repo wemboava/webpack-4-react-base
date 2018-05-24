@@ -1,0 +1,20 @@
+/*  Config
+=============================================*/
+@import '~_sass/config/vars';
+@import '~_sass/config/mixins';
+@import '~_sass/config/base';
+
+/*  Components
+=============================================*/
+
+/*  Layouts
+=============================================*/
+
+////////
+body {
+    background-color: #15a58f;
+
+    .test-img {
+        width: 100px;
+    }
+}

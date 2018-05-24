@@ -1,0 +1,8 @@
+@import "./vars";
+
+// Mixin Media Query
+@mixin media-q($screen: $screen-sm, $type: max) {
+    @media screen and (#{$type}-width: $screen) {
+        @content;
+    }
+}
