@@ -1,5 +1,5 @@
-import ExempleAction from './exemple/exempleAction'
+import ExampleAction from './example/exampleAction'
 
 export {
-    ExempleAction
+    ExampleAction
 }

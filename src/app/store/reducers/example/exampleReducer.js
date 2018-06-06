@@ -1,13 +1,13 @@
 const INITIAL_STATE = {
-    exempleState: false,
+    exampleState: false
 }
 
 export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case 'EXEMPLE':
+        case 'EXAMPLE':
             return {
                 ...state,
-                exempleState: action.payload.exempleState
+                exampleState: action.payload.exampleState
             }
         default:
             return state

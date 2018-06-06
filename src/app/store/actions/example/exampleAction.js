@@ -3,9 +3,9 @@ import React from 'react'
 export function changeStatusExample (data) {
     // console.log('action =>', data)
     return {
-        type: 'EXEMPLE',
+        type: 'EXAMPLE',
         payload: {
-            exempleState: data.exempleState,
+            exampleState: data.exampleState,
         }
     }
 }

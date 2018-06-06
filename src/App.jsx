@@ -1,12 +1,11 @@
 import React from 'react'
+
 import '_sass/_main.scss'
+import ExampleComponent from '_components/example/ExampleComponent';
 
 const App = () => {
     return (
-        <div>
-            <p>React here3!</p>
-            <img className="test-img" src={require('_img/image.jpeg')} alt="" />
-        </div>
+        <ExampleComponent />
     )
 }
 
