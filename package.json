@@ -27,11 +27,7 @@
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
-<<<<<<< HEAD
     "extract-text-webpack-plugin": "^3.0.2",
-=======
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
->>>>>>> 6b12afea32417099624ae42888c73c2e4aca077b
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
