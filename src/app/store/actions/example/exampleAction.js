@@ -5,7 +5,7 @@ export function changeStatusExample (data) {
     return {
         type: 'EXAMPLE',
         payload: {
-            exampleState: data.exampleState,
+            exampleState: data
         }
     }
 }
