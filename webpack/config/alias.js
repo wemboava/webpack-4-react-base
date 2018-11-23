@@ -18,5 +18,9 @@ module.exports = {
     '_components': path.join(src, 'app', 'components'),
     '_routes': path.join(src, 'app', 'routes'),
     '_utils': path.join(src, 'app', 'utils'),
-    '_view': path.join(src, 'app', 'view')
+    '_view': path.join(src, 'app', 'view'),
+    
+    '_store': path.join(src, 'app', 'store'),
+    '_actions': path.join(src, 'app','store', 'actions'),
+    '_reducers': path.join(src, 'app', 'store', 'reducers')
 }
